@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+
+.row::after {
+   content: "";
+   clear: both;
+   display: table;
+}
+
+hr {border: 3px solid red;}
+
+body, .container {
+	background: #DDDDDD;
+}
+
+html, body {
+	width: 100vw;
+	max-width: 100%;
+	min-height: 100vh;
+}
+
+footer {
+	background-color: #AB0505;
+	color: #ffffff;
+	text-align: center;
+	font-size: 12px;
+	padding: 15px;
+	margin: 2%;
+	border: 2px solid #CA0505;
+	border-bottom-color: #8D0303;
+	border-radius: 10px;
+	
+}
+
+.aside-right, .aside-left {
+	border: 2px solid #F1F1F1;
+	border-radius: 10px;
+	border-bottom-color: #E5E5E5; 
+	background: #FDFDFD;
+	padding: 15px;
+	color: #909090;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bolder;
+	margin-top: 50px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.col-6, .col-s-6 {
+	border: 2px solid #EBEBEB;
+	border-radius: 10px;
+	border-bottom-color: #D3D3D3; 
+	background: #FDFDFD;
+	margin-top: 40px;
+	color: #707070;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* For mobile phones 
+*/
+[class*="col-"] {
+	width: 100%;
+	display: inline-flex;
+	flex-direction: column;
+    padding: 15px;
+}
+
+  /* Column widths for tablets 
+*/
+@media only screen and (min-width: 700px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+  /* Column widths for Desktops 
+*/
+@media only screen and (min-width: 950px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+  /* Set width for container div to 1400 px
+     Fixed position navbar screen width >= 1400px
+  */
+@media only screen and (min-width: 1400px) {
+  
+  .container{
+	  width: 1400px;
+	  margin: 3% auto;
+  }
+  .topnav{
+	  width: 100%;
+	  margin: auto;
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  height: 50px;
+	}
+}
+
+  /* Fixed position under screen width of 1400px 
+*/
+@media only screen and (max-width: 1399px) {
+  .topnav{
+	  width: 100%;
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  height: 50px;
+}
+  .container{
+	  margin: 3% auto;
+}
+}
+
+  /* Format on mobile device
+*/
+@media screen and (max-width: 700px) {
+	
+}
